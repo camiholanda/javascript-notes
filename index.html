@@ -1,65 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="horário.css">
+    <title>Estruturas Condicionais</title>
+
+    <script src="projeto-aula-04032026.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
+
+     <!-- Class -> divide os objetos por algo em comum (grupo de objetos) 
+     #textoverde -> serve pra add uma tag ou id para os meus componentes
+     porém o ID é único.
+     Agora, utilizar ponto(.) no ínicio identifica ele como 
+     pertencente a uma classe e nesta classe há com add características (colors, font etc)
+    Um objeto pode pertencer a inúmeras classses.
+    O tailwind trabalha somente com classes e há artefatos prontos para uso
+    padding = espaço
+    m = margin
+    mb = margin bottom afasta dos objetos inferiores
+    mt = margin toppin afasta do topo  os objetos 
+    text-center = alinha texto no centro
+    mx-auto = lembrar de plano cartesiano -> margem automática horizontal
+    shadow-lg - sombra large
+    rounded-lg
+
+     -->
+
 </head>
-<body>
-    <table>
-      <thead>
-        <tr>
-            <th></th>
-            <th>Segunda</th>
-            <th>Terça</th>
-            <th>Quarta</th>
-            <th>Quinta</th>
-            <th>sexta</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>8:50-10:30</td>
-          <td></td>
-          <td>WEB estático</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>10:40-12:20</td>
-          <td></td>
-          <td class="rosa">Matemática</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>12:50-14:30</td>
-          <td>Inglês</td>
-          <td>Português</td>
-          <td>Geografia</td>
-          <td>Web estático</td>
-          <td>Física</td>
-        </tr>
-        <tr>
-          <td>14:40-16:20</td>
-          <td rowspan="2">Lógica</td>
-          <td>Arte</td>
-          <td class="rosa">Matemática</td>
-          <td>Biologica</td>
-          <td>Sociologia</td>
-        </tr>
-        <tr>
-          <td>16:30-18:10</td>
-          
-          <td>História</td>
-          <td>Filosofia</td>
-          <td>Português</td>
-          <td>Química</td>
-          
-      </tbody>
-    </table>
+<body class="bg-blue-100">
+
+    <div class="topo bg-blue-900 text-white p-5 mb-5 text-center ">Título do Site</div>
+
+    <div class=" container mx-auto bg-white p-5 ms-5 shadow-lg rounded-lg" >
+
+    <button type="button" onclick="maioridade()" class="textoAzul bordaArredondada">Maioridade</button>
+    
+    <!-- A tag <hr> (do inglês Horizontal Rule) é usada em HTML
+     para criar uma linha horizontal que divide visualmente o conteúdo
+     de uma página.
+     -->
+
+    <hr>
+    <p class="textoAzul bordaArredondada">Bora pra aula</p>
+    <hr>
+    
+    <!-- Notes: Objetos em linha  vs
+         Objetos em bloco 
+    -->
+
+
 </body>
 </html>
